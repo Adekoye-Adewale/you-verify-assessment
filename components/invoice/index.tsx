@@ -6,11 +6,7 @@ import { getStatusStyle } from "@/util/getStatusStyle";
 import {
         Table,
         TableBody,
-        TableCaption,
         TableCell,
-        TableFooter,
-        TableHead,
-        TableHeader,
         TableRow,
 } from "@/components/ui/table"
 
