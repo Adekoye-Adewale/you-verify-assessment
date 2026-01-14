@@ -388,3 +388,46 @@ export const reminderFrequencies = [
         '24 hrs before due date',
         'On due date',
 ]
+
+export const invoiceActivities = [
+        {
+                id: 1,
+                activity: 'You',
+                timeAgo: 'Today, 12:20 PM',
+                act: 'Created invoice',
+                user: '00239434/Olaniyi Ojo Adewale',
+                userAvatar: '/images/avatar.png'
+        },
+        {
+                id: 2,
+                activity: 'You',
+                act: 'Sent invoice',
+                timeAgo: 'Today, 12:20 PM',
+                user: '00239434/Olaniyi Ojo Adewale to Olaniyi Ojo Adewale',
+                userAvatar: '/images/avatar.png'
+        },
+        {
+                id: 3,
+                activity: 'Payment Confirmed',
+                act: 'You manually confirmed a partial payment of',
+                timeAgo: 'Today, 12:20 PM',
+                user: '$503,000.00',
+                userAvatar: '/images/avatar.png'
+        },
+        {
+                id: 4,
+                activity: 'Payment Confirmed',
+                act: 'You manually confirmed a full payment of',
+                timeAgo: 'Today, 12:20 PM',
+                user: '$6,000,000.00',
+                userAvatar: '/images/avatar.png'
+        },
+        {
+                id: 5,
+                activity: 'You ',
+                act: 'Sent invoice',
+                timeAgo: 'Today, 12:20 PM',
+                user: '00239434/Olaniyi Ojo Adewale to Olaniyi Ojo Adewale',
+                userAvatar: '/images/avatar.png'
+        },
+]
