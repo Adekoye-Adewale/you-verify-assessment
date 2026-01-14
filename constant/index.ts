@@ -137,7 +137,7 @@ export const recentInvoicesData = [
                                 status: 'Paid',
                         },
                         {
-                                id: 'Invoice - 1023494 - 2304',
+                                id: 'Invoice - 1023495 - 2304',
                                 dueDate: 'May 19th, 2023',
                                 amount: '1,311,750.12',
                                 status: 'Overdue',
@@ -154,13 +154,13 @@ export const recentInvoicesData = [
                                 status: 'Draft',
                         },
                         {
-                                id: 'Invoice - 1023494 - 2304',
+                                id: 'Invoice - 1023495 - 2304',
                                 dueDate: 'May 19th, 2023',
                                 amount: '1,311,750.12',
                                 status: 'Pending payment',
                         },
                         {
-                                id: 'Invoice - 1023494 - 2304',
+                                id: 'Invoice - 1023496 - 2304',
                                 dueDate: 'May 19th, 2023',
                                 amount: '1,311,750.12',
                                 status: 'Paid',
@@ -198,4 +198,193 @@ export const recentActivitiesData = [
                 user: '00239434/Olaniyi Ojo Adewale',
                 userAvatar: '/icons/avatar.svg'
         },
+]
+
+export const invoices = [
+        {
+                id: 'Invoice - 1023494 - 2304',
+                invoiceNumber: '1023902390',
+                issueDate: 'March 30th, 2023',
+                dueDate: 'May 19th, 2023',
+                amount: '1,311,750.12',
+                status: 'Partial Payment',
+                billingCurrency: 'USD ($)',
+                discount: 2.5,
+                sender: {
+                        img: '/images/logo-frame.png',
+                        name: 'Fabulous Enterprise',
+                        phoneNumber: '+386 989 271 3115',
+                        address: '1331 Hart Ridge Road 48436 Gaines, MI.',
+                        email: 'info@fabulousenterise.co'
+                },
+                customer: {
+                        name: 'Olaniyi Ojo Adewale',
+                        phoneNumber: '+386 989 271 3115',
+                        email: 'info@fabulousenterise.co',
+                },
+                items: [
+                        {
+                                id: 101101,
+                                name: 'Email Marketing',
+                                description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium ',
+                                quantity: 10,
+                                price: 1500,
+                        },
+                        {
+                                id: 101102,
+                                name: 'Video looping effect',
+                                description: ' ',
+                                quantity: 6,
+                                price: 1110500,
+                        },
+                        {
+                                id: 101103,
+                                name: 'Graphic design for emailst',
+                                description: 'Tsit voluptatem accusantium  ',
+                                quantity: 7,
+                                price: 2750,
+                        },
+                        {
+                                id: 101104,
+                                name: 'Video looping effect',
+                                description: ' ',
+                                quantity: 6,
+                                price: 1110500,
+                        },
+                ],
+                paymentInformation: {
+                        accountName: '1023902390',
+                        accountNumber: 'March 30th, 2023',
+                        achRoutingNumber: 'May 19th, 2023',
+                        bankName: 'USD ($)',
+                        bankAddress: '1023902390',
+                },
+                note: 'Thank you for your patronage'
+        },
+        {
+                id: 'Invoice - 1023495 - 2304',
+                invoiceNumber: '1023902390',
+                issueDate: 'March 30th, 2023',
+                dueDate: 'May 19th, 2023',
+                amount: '1,311,750.12',
+                status: 'Partial Payment',
+                billingCurrency: 'USD ($)',
+                discount: 2.5,
+                sender: {
+                        name: 'Fabulous Enterprise',
+                        phoneNumber: '+386 989 271 3115',
+                        address: '1331 Hart Ridge Road 48436 Gaines, MI.',
+                        email: 'info@fabulousenterise.co'
+                },
+                customer: {
+                        name: 'Olaniyi Ojo Adewale',
+                        phoneNumber: '+386 989 271 3115',
+                        email: 'info@fabulousenterise.co',
+                },
+                items: [
+                        {
+                                id: 101101,
+                                name: 'Email Marketing',
+                                description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium ',
+                                quantity: 10,
+                                price: 1500,
+                        },
+                        {
+                                id: 101102,
+                                name: 'Video looping effect',
+                                description: ' ',
+                                quantity: 6,
+                                price: 1110500,
+                        },
+                        {
+                                id: 101103,
+                                name: 'Graphic design for emailst',
+                                description: 'Tsit voluptatem accusantium  ',
+                                quantity: 7,
+                                price: 2750,
+                        },
+                        {
+                                id: 101103,
+                                name: 'Video looping effect',
+                                description: ' ',
+                                quantity: 6,
+                                price: 1110500,
+                        },
+                ],
+                paymentInformation: {
+                        accountName: '1023902390',
+                        accountNumber: 'March 30th, 2023',
+                        achRoutingNumber: 'May 19th, 2023',
+                        bankName: 'USD ($)',
+                        bankAddress: '1023902390',
+                },
+                note: 'Thank you for your patronage'
+        },
+        {
+                id: 'Invoice - 1023496 - 2304',
+                invoiceNumber: '1023902390',
+                issueDate: 'March 30th, 2023',
+                dueDate: 'May 19th, 2023',
+                amount: '1,311,750.12',
+                status: 'Partial Payment',
+                billingCurrency: 'USD ($)',
+                discount: 2.5,
+                sender: {
+                        name: 'Fabulous Enterprise',
+                        phoneNumber: '+386 989 271 3115',
+                        address: '1331 Hart Ridge Road 48436 Gaines, MI.',
+                        email: 'info@fabulousenterise.co'
+                },
+                customer: {
+                        name: 'Olaniyi Ojo Adewale',
+                        phoneNumber: '+386 989 271 3115',
+                        email: 'info@fabulousenterise.co',
+                },
+                items: [
+                        {
+                                id: 101101,
+                                name: 'Email Marketing',
+                                description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium ',
+                                quantity: 10,
+                                price: 1500,
+                        },
+                        {
+                                id: 101102,
+                                name: 'Video looping effect',
+                                description: ' ',
+                                quantity: 6,
+                                price: 1110500,
+                        },
+                        {
+                                id: 101103,
+                                name: 'Graphic design for emailst',
+                                description: 'Tsit voluptatem accusantium  ',
+                                quantity: 7,
+                                price: 2750,
+                        },
+                        {
+                                id: 101103,
+                                name: 'Video looping effect',
+                                description: ' ',
+                                quantity: 6,
+                                price: 1110500,
+                        },
+                ],
+                paymentInformation: {
+                        accountName: '1023902390',
+                        accountNumber: 'March 30th, 2023',
+                        achRoutingNumber: 'May 19th, 2023',
+                        bankName: 'USD ($)',
+                        bankAddress: '1023902390',
+                },
+                note: 'Thank you for your patronage'
+        },
+]
+
+export const reminderFrequencies = [
+        '14 days before due date',
+        '7 days before due date',
+        '3 days before due date',
+        '24 hrs before due date',
+        'On due date',
 ]
