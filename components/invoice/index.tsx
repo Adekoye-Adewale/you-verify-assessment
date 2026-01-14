@@ -32,7 +32,8 @@ type ActivityCardProps = {
         activity: string;
         timeAgo: string;
         user: string;
-        userAvatar: string
+        userAvatar: string;
+        act?: string
 }
 
 type InvoicesCardProps = {
@@ -320,7 +321,7 @@ const InvoicesCard = ({ id, dueDate, amount, status }: InvoicesCardProps) => {
         )
 }
 
-const ActivityCard = ({ activity, timeAgo, user, userAvatar }: ActivityCardProps) => {
+export const ActivityCard = ({ activity, timeAgo, user, userAvatar, act ="Created invoice" }: ActivityCardProps) => {
         return (
                 <div className="flex gap-4">
                         <div>
@@ -343,7 +344,7 @@ const ActivityCard = ({ activity, timeAgo, user, userAvatar }: ActivityCardProps
                                 </div>
                                 <div className="text-xs md:text-sm font-medium p-4 bg-[#F6F8FA] rounded-4xl">
                                         <span className="text-[#697598]">
-                                                Created invoice
+                                                {act}
                                         </span>{' '}
                                         <span className="text-[#1F1F23]">
                                                 {user}
