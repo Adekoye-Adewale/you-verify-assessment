@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Fragment } from "react/jsx-runtime";
-import { actionCardsData, overViewCardsData, recentActivitiesData, recentInvoicesData } from "@/constant";
+import { actionCardsData, invoices, overViewCardsData, recentActivitiesData, recentInvoicesData } from "@/constant";
 import { PriButton, SecButton } from "../buttons"
 import { getStatusStyle } from "@/util/getStatusStyle";
 import {
@@ -9,6 +9,8 @@ import {
         TableCell,
         TableRow,
 } from "@/components/ui/table"
+import InvoicePopUp from "../invoicePopUp";
+import Link from "next/link";
 
 type OverviewCardProps = {
         title: string;
@@ -42,16 +44,19 @@ type InvoicesCardProps = {
 
 export default function InvoicePageComponent() {
         return (
-                <div className="space-y-5 md:space-y-10 z-1 w-full overflow-x-hidden">
-                        <PageHeader />
-                        <PageSubHeader />
-                        <OverviewSection />
-                        <ActionSection />
-                        <div className="flex flex-wrap gap-8">
-                                <RecentInvoicesSection />
-                                <RecentActivitiesSection />
+                <>
+                        <div className="space-y-5 md:space-y-10 z-1 w-full overflow-x-hidden">
+                                <PageHeader />
+                                <PageSubHeader />
+                                <OverviewSection />
+                                <ActionSection />
+                                <div className="flex flex-wrap gap-8">
+                                        <RecentInvoicesSection />
+                                        <RecentActivitiesSection />
+                                </div>
                         </div>
-                </div>
+                        <InvoicePopUp invoices={invoices}/>
+                </>
         )
 }
 
@@ -258,8 +263,8 @@ const InvoicesTable = () => {
                                         </h4>
                                         <Table>
                                                 <TableBody>
-                                                        {data.invoices.map((item, index) => (
-                                                                <Fragment key={index}>
+                                                        {data.invoices.map((item) => (
+                                                                <Fragment key={item.id}>
                                                                         <InvoicesCard
                                                                                 id={item.id}
                                                                                 dueDate={item.dueDate}
@@ -281,7 +286,12 @@ const InvoicesCard = ({ id, dueDate, amount, status }: InvoicesCardProps) => {
                 <TableRow className="border-b-0">
                         <TableCell className="py-2 md:py-4 px-4 md:px-6 w-20 md:w-36 cursor-pointer">
                                 <div className="flex font-medium text-xs md:text-sm text-[#373B47] hover:text-blue-800 text-wrap transition-all duration-300">
-                                        {id}
+                                        <Link 
+                                                href={`/invoice?inv=${encodeURIComponent(id)}`} 
+                                                title={`View details for ${id}`}
+                                        >
+                                                {id}
+                                        </Link>
                                 </div>
                         </TableCell>
                         <TableCell className="py-2 md:py-4 px-4 md:px-6">
