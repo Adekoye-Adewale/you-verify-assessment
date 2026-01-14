@@ -70,7 +70,8 @@ export type InvoicePreviewProps = {
         dueDate: string;
         billingCurrency: string;
         items: InvoiceItem[];
-        discount: number
+        discount: number;
+        note?: string
 }
 
 export type TotalTableProps = {
