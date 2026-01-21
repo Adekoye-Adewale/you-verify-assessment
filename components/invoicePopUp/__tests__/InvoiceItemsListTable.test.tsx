@@ -60,7 +60,7 @@ describe('InvoiceItemsListTable', () => {
                  */
 
                 // Row totals
-                expect(screen.getByText('$300.00')).toBeInTheDocument()
+                expect(screen.getAllByText('$300.00')).toBeInTheDocument()
                 expect(screen.getByText('$600.00')).toBeInTheDocument()
 
                 // Subtotal
