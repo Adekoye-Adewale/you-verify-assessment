@@ -37,18 +37,20 @@ export default function InvoicePopUp({ invoices }: { invoices: InvoiceProps['inv
 
         const invoice = invoices.find((data: InvoiceProps['invoice']) => data.id === inv);
 
-        if (!invoice) return null;
+        if (!invoice) return(
+                <div>
+                        <h2>
+                                Invoice Not Avaliable
+                        </h2>
+                </div>
+        );
 
         return (
-                <>
-                        {invoice && (
-                                <PopUpWrapper>
-                                        <PopUpContent 
-                                                invoice={invoice} 
-                                        />
-                                </PopUpWrapper>
-                        )}
-                </>
+                <PopUpWrapper>
+                        <PopUpContent 
+                                invoice={invoice} 
+                        />
+                </PopUpWrapper>
         )
 }
 
